@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Myapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.jpg" type="image/x-icon">
+	<title>Job Clubs | Find out the dates, times and locations of Job Clubs around the UK</title>
+	<meta name="author" content="Fuddle">
+	 
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+	<meta name="keywords" content="Recruitment Fairs, Career Fairs, Recruitment Events, Career Events, job fairs, job fairs network, job fair norwich, UK, jobs fair London, career fairs">
+	<meta name="description" content="Welcome to the Job Fair Network, we specialise in job fairs all over the UK">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet" type="text/css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/fonts/glyphicons-halflings-regular.ttf">
+
+    <link href="/styles/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/javascript/html5shiv.js"></script>
+      <script src="/javascript/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
 
-<%= yield %>
+	<body>
+	<div id="wrap">
+		<div class="navbar navbar-default_pattern navbar-default navbar-fixed-top scrolled">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="/" title="The Job Fairs Homepage"><i class="fa fa-home"></i></a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">I'm a Jobseeker</a>
+								<ul class="dropdown-menu">
+									<li><a href="/attend-a-jobs-fair" title="Attend a Jobs Fair">Attend a Jobs Fair</a></li>
+									<li><a href="/job-fairs" title="Where &amp; When">Where &amp; When</a></li>
+									<li><a href="/quick-tips" title="Quick Tips">Quick Tips</a></li>
+									<li><a href="/job-clubs" title="Job Clubs">Job Clubs</a></li>
+									<li><a href="/blog" title="Blog" target="_blank">Blog</a></li>
+									<li><a href="/jobseeker-testimonials-and-support" title="Testimonials">Testimonials</a></li>
+									<li><a href="http://www.beginfostering.co.uk/" target="_blank" title="Thinking of Fostering">Thinking of Fostering?</a></li>				
+								</ul>
+							</li>
+							<li><a href="/recruiter/welcome" title="The Job Fairs Homepage">I'm a Recruiter</a></li>
+						</ul>	 
+					</div>
+				</div>
+		</div>
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-sm-12" style="text-align:center;">
+					    <div class="col-sm-6">
+					    <%= image_tag("logo_new.jpg", :alt => "rss feed") %>
+						
+						</div>
+						<div class="col-sm-6-top">
+						<a href="http://www.thejobfairs.co.uk/job-fairs">68 <font color="black">Job Fairs in</font> <br> 31 <font color="black">Locations across</font> <br> <font color="black">the UK in</font> 2015</a>
+						</div>
+					</div>
+				</div>
+		</div>	
+	<%= yield %>
 
-</body>
+	
+	</div>
+	</body>
+
 </html>
