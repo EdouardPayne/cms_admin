@@ -1,15 +1,18 @@
-development:  
+default: &default
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
   pool: 5
+  timeout: 5000
   username: ejpayne
   password:
 
-test:  
-  adapter: postgresql
-  encoding: unicode
+development:
+  <<: *default
   database: myapp_development
-  pool: 5
-  username: ejpayne
-  password:
+
+test:
+  <<: *default
+  database: myapp_test
+
+production:
+  url: <%= ENV["postgres://kanflmcszabuhn:NfwyNlQKJZhaPw647y7EtEqCTF@ec2-54-197-238-19.compute-1.amazonaws.com:5432/ddm0t0f587s33o"] %>
