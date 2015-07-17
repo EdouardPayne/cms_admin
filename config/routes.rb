@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   root 'welcome#index'
+  
+  get '/attend-a-jobs-fair', to: 'welcome#visit', via: :get
+  get '/quick-tips', to: 'welcome#tips', via: :get
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

@@ -16,6 +16,11 @@ gem 'coffee-rails', '~> 4.1.0'
 
 
 gem 'rails_12factor', group: :production
+ 
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'devise'
+
 
 
 # Use jquery as the JavaScript library
