@@ -1,1 +1,14 @@
-<h1> Hello World! </h1>
+<div class="container">
+	<h1> Hello World! </h1>
+
+	<% @locations.each do |location| %>
+
+	<p><strong>City:</strong> <%= location.city %></p>
+	<p><strong>Venue:</strong> <%= location.venue %></p>
+	<p><strong>Location:</strong> <%= location.when %></p>
+	<p><strong>Start time:</strong> <%= location.start_time %></p>
+	<p><strong>End time:</strong> <%= location.end_time %></p>
+	  <br>
+	<% end %>
+
+</div>
