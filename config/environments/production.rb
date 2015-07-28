@@ -9,11 +9,11 @@ Rails.application.configure do
 
   config.serve_static_files = true
 
-  #config.assets.js_compressor = :uglifier
+  config.assets.js_compressor = :uglifier
 
-  #config.assets.compile = false
+  config.assets.compile = false
 
-  #config.assets.digest = true
+  config.assets.digest = false
 
   config.log_level = :debug
   config.i18n.fallbacks = true
