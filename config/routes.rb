@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   get '/attend-a-jobs-fair', to: 'welcome#visit', via: :get
   get '/quick-tips', to: 'welcome#tips', via: :get
 
+  get '/quick-tips', to: 'welcome#tips', via: :get
+
+  get '/job-fairs', to: 'fair#index', via: :get
+
+  
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
