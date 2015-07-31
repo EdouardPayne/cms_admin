@@ -17,8 +17,123 @@
       #carousel-example-generic { display: none; }
       .col-lg-12-vine { background-color: #fff; display: block; margin: auto; }
       .main_title_inside_home { margin: 30px 0 20px 0; display: inline-block; }
-      
-      
-      
-    .col-contact-tile { width: 100%; }
+            
+      .radio-sponsor { display: none; }
+
+.nav > li.dropdown.open .dropdown-menu {
+  display: block;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  background-color: #337AF8;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-menu>li {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.col-contact-tile { width: 100%; }
+
+.navbar-nav { background-color: #337AF8; margin-top: 0px; margin-bottom: 0px; }
+.navbar-fixed-top a { color: #fff; }
+
+.navbar-fixed-top .fa { color: #000; }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background-color: #165FE2; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #337AF8;
+}
+
+.navbar-fixed-top.scrolled .navbar-collapse .navbar-nav > li > a { color: #fff; }
+
+.nav > li.dropdown.open .dropdown-menu > li > a { padding: 7px 30px; font-size: 15px; }
+
+.hero-video iframe { display: none; }
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  background: #3479F8;
+}
+
+.hero-video {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+}
+
+.hero-video h2 {
+  margin-top: 46px;
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.header-title h1 { font-size: 30px; }
+
+.fair-perks { width: 100%; }
+
+#container-welcome h1 { font-size: 19px; letter-spacing: 0px; }
+
+.blue-banner h1 { font-size: 22px; }  
+
+.blue-banner a { font-size: 20px; width: 94%; padding: 15px 15px; }
+
+.quick-tips li { font-size: 16px; }
+
+.quick-tips ul { padding-left: 0px; }
+
+.margin { padding: 0 0 30px 0; }
+
+.logo_margin { display: none; }
+
+.mobile-logo { display: block; background-image: url('../images/mobile-logo.svg'); height: 50px; width: 50px; float: left; }
+
+.col-sm-6-top { margin-top: 32px; }
+
+.home-mobile { display: block; margin: 14px 0 0 10px; float: left; }
+
+.home-desktop { display: none !important; }
+
+.btn-info { width: 100%; }
+
+.nav > li > a:hover, .nav > li > a:focus { color: #fff; }
+
+.radio-mobile { display: inline-block; padding: 16px 15px; background-color: #333; width: 100%; text-align: center; }
+.radio-mobile a { color: #fff; font-size: 15px; }
+
+
+.cd-headline {
+    font-size: 2.6em;
+    line-height: 1.2;
+}
+
+.local-jobs {
+    font-size: 2.6em;
+    margin-top: 0;
+}
+
+.cd-headline.type .cd-words-wrapper { height: 60px; }
+
+.cd-intro {
+    margin-top: 34px;
+    margin-bottom: 0;
+}
 }
